@@ -87,7 +87,7 @@
                     Console.WriteLine("Il Quadrato è {0}", risultato);
                     break;
                 case 5:
-                    risultato = MyApp.Operations.Media(iUserNumbers);
+                    risultato = (float)MyApp.Operations.Media(iUserNumbers);
                     Console.WriteLine("La Media è {0}", risultato);
                     break;
             }

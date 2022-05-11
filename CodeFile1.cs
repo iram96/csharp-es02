@@ -22,7 +22,7 @@
 
         public static decimal Divisione(int num1, int num2)
         {
-            decimal iDivisione = Convert.ToDecimal(num1 / num2);
+            decimal iDivisione = (decimal)num1 / (decimal)num2;
             return (decimal)iDivisione;
         }
 
@@ -32,14 +32,15 @@
             return iQuadrato;
         }
 
-        public static float Media(int[] vect)
+        public static decimal Media(int[] vect)
         {
-            int iSomma = 0;
+            decimal iSomma = 0;
             for (int i = 0; i < vect.Length; i++)
             {
                 iSomma += vect[i];
             }
-            float fMedia = iSomma / vect.Length;
+
+            decimal fMedia = iSomma / (decimal)vect.Length;
             return fMedia;
         }
 
